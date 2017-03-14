@@ -1,10 +1,16 @@
 import React from 'react';
+import {connect} from 'react-redux';
 
 
-export default function GuessStatus(props) {
+export function GuessStatus(props) {
   return (
     <div className="status">
-      <p>Hot</p>
+      <p>{props.status}</p>
     </div>
   );
 }
+
+const mapStateToProps = (state, props) => ({
+  status: state.feedback
+});
+export default connect(mapStateToProps)(GuessStatus);
