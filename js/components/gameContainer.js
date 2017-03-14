@@ -8,7 +8,6 @@
   guess history component
   info component
   play container component
-
 */
 
 import React from 'react';
