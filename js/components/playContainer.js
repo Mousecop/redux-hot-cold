@@ -1,9 +1,8 @@
 import React from 'react';
 
 import GuessCount from './guessCount';
-import Button from './button';
+import UserSubmit from './userSubmit';
 import GuessHistory from './guessHistory';
-import GuessInput from './guessInput';
 import GuessStatus from './guessStatus';
 
 
@@ -11,8 +10,7 @@ export default function PlayContainer(props) {
   return (
     <div className="playContainer">
       <GuessStatus />
-      <GuessInput />
-      <Button />
+      <UserSubmit />
       <GuessCount />
       <GuessHistory />
     </div>
