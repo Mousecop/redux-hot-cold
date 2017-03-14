@@ -16,7 +16,7 @@ export function ShowModal(props) {
   );
 }
 const mapStateToProps = (state, props) => ({
-    modalToggle: state.shoInfoModal
+    modalToggle: state.showInfoModal
 })
 
 export default connect()(ShowModal);
