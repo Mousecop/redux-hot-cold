@@ -1,10 +1,10 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import * as actions from '../actions/index';
-import store from '../store';
 
 
 export function UserSubmit(props) {
+    console.log(props);
     let userInput;
   return (
     <form id="form" className="user-submit" onSubmit={e => {
