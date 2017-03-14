@@ -1,6 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import * as actions from '../actions/index';
+import store from '../store';
 
 
 export function UserSubmit(props) {
@@ -10,7 +11,7 @@ export function UserSubmit(props) {
             e.preventDefault();
             props.dispatch(actions.makeGuess(userInput.value))}}>
         <input ref={ref => userInput=ref} type="text" placeholder="Enter Your Guess" maxLength="3" required />
-        <input type="submit" value="user"/>
+        <input type="submit" value="guess"/>
     </form>
   );
 
