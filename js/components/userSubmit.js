@@ -4,7 +4,6 @@ import * as actions from '../actions/index';
 
 
 export function UserSubmit(props) {
-    console.log(props);
     let userInput;
   return (
     <form id="form" className="user-submit" onSubmit={e => {
