@@ -14,12 +14,14 @@ import React from 'react';
 
 import PlayContainer from './playContainer';
 import NewGame from './newGame';
+import ShowModal from './showModal';
 
 export default function Game(props) {
   return (
     <div className="gameContainer">
       <h1 className="header">Hot or Cold</h1>
       <NewGame />
+      <ShowModal />
       <PlayContainer />
     </div>
   );
