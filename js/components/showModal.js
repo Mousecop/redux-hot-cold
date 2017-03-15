@@ -4,9 +4,6 @@ import * as actions from '../actions/index';
 import store from '../store';
 
 export function ShowModal(props) {
-
-    if ()
-
   return (
     <a href="#" className="new" onClick={e => {
       e.preventDefault();
@@ -15,8 +12,5 @@ export function ShowModal(props) {
     </a>
   );
 }
-const mapStateToProps = (state, props) => ({
-    modalToggle: state.showInfoModal
-})
 
 export default connect()(ShowModal);
