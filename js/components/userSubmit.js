@@ -4,7 +4,7 @@ import * as actions from '../actions/index';
 
 
 export function UserSubmit(props) {
-    let userInput;
+  let userInput;
   return (
     <form id="form" className="user-submit" onSubmit={e => {
             e.preventDefault();
