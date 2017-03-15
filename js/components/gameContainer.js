@@ -16,7 +16,7 @@ import PlayContainer from './playContainer';
 import NewGame from './newGame';
 import ShowModal from './showModal';
 import * as actions from '../actions/index';
-import store from '../store';
+import Modal from './modal';
 
 export function Game(props) {
     let toggle = 'none';
@@ -30,7 +30,7 @@ export function Game(props) {
       <ShowModal />
       <PlayContainer />
       <div id="sm" style={{display: toggle}}>
-          <h2>Show Modal</h2>
+          <Modal />
           <button onClick={() => {props.dispatch(actions.toggleInfoModal())}}>Got it!</button>
       </div>
     </div>
